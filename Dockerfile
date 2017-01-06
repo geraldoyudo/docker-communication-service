@@ -11,7 +11,7 @@ COPY entry-point.sh /entry-point.sh
 
 RUN chmod u+x /entry-point.sh
 
-ENV WEB_PORT ${webPort:-80}
+ENV WEB_PORT ${WEB_PORT:-80}
 EXPOSE ${WEB_PORT}
 ENTRYPOINT ["/entry-point.sh"]
 
