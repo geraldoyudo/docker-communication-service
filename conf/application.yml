@@ -1,2 +1,2 @@
-server.port=${webPort}
+server.port=${WEB_PORT}
 endpoints.shutdown.enabled=true
