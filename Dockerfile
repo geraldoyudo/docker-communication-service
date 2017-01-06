@@ -9,5 +9,7 @@ RUN wget ${projectUrl} -O ${fileName}
 COPY conf/application.yml /conf/application.yml
 COPY entry-point.sh /entry-point.sh
 
+RUN chmod u+x /entry-point.sh
+
 ENTRYPOINT ["/entry-point.sh"]
 
