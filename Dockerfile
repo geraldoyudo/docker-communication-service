@@ -11,6 +11,6 @@ COPY entry-point.sh /entry-point.sh
 
 RUN chmod u+x /entry-point.sh
 
-EXPOSE ${WEB_PORT:-8060}
+EXPOSE 8060
 ENTRYPOINT ["/entry-point.sh"]
 
