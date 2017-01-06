@@ -1,2 +1,2 @@
-server.port=${WEB_PORT}
+server.port=8060
 endpoints.shutdown.enabled=true
