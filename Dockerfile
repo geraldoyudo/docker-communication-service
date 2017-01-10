@@ -6,7 +6,7 @@ ENV fileName comm-service.jar
 
 RUN wget ${projectUrl} -O ${fileName}
 
-COPY conf/application.properties /conf/application.properties
+COPY conf/application.properties /home/application.properties
 COPY entry-point.sh /entry-point.sh
 
 RUN chmod u+x /entry-point.sh
